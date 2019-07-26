@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="table-responsive">
+    <table class="table  table-striped css-serial">
+      <thead>
+        <tr style="text-align: center">
+       
+          <th scope="col">ASIN</th>
+          <th scope="col">Category</th>
+          <th scope="col">Title</th>
+         
+          
+        </tr>
+      </thead>
+      <tbody>
+          <ng-container *ngFor = "let item of deals">
+        <tr style="align-self: center;text-align: center "  (click)="onSelect(item1)" *ngFor="let item1 of item.amazon_data">
+
+            <a><td>{{item1.ASIN}}</td></a>
+            <td>{{item1.Category}}</td>
+            <td>{{item1.Title}}</td>
+          
+        
+          
+        </tr>
+        </ng-container>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
