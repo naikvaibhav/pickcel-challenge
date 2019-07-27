@@ -1,3 +1,22 @@
-<p>
-  details works!
-</p>
+<br>
+<div class="card bg-light mb-3" style="max-width: 640px;" *ngFor="let item1 of myResponse">
+  <div class="card-header">Product Info</div>
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{item1.Images}}" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+
+      <div class="card-body">
+        <h5 class="card-title">Product Name: {{item1.Title}}</h5>
+        <h5 class="card-title">Reverse Name: {{item1.Title | reverseStr}} | </h5>
+
+        <p class="card-text">ASIN: {{item1.ASIN}}</p>
+        <p class="card-text">Details: {{item1.Details}}</p>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <a [routerLink]="['/list']" class="btn btn-dark  inline-block">Go Back</a>
+</div>

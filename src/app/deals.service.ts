@@ -14,6 +14,8 @@ import 'rxjs/add/operator/do';
 })
 
 export class DealsService {
+  public a = [];
+  public value = [];
 
   private baseUrl = " https://test.pickcel.com/api/v1/getAmazonDeals";
 
@@ -33,6 +35,7 @@ export class DealsService {
     console.log(myResponse);
     return myResponse;
   }
+
 
 
 

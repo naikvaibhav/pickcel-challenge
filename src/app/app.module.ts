@@ -18,6 +18,8 @@ import { DealsService } from './deals.service'
 import { ListComponent } from './list/list.component';
 import { DetailsComponent } from './details/details.component';
 
+/*importing reverse pipe */
+import { ReverseStr } from './reverse-str.pipe';
 
 
 
@@ -25,18 +27,20 @@ import { DetailsComponent } from './details/details.component';
   declarations: [
     AppComponent,
     ListComponent,
-    DetailsComponent
+    DetailsComponent,
+    ReverseStr
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    
+
     HttpClientModule,
     RouterModule.forRoot([
-      { path: 'list', component: ListComponent},
+      { path: 'list', component: ListComponent },
       { path: '', redirectTo: 'list', pathMatch: 'full' },
-      { path: 'details', component: DetailsComponent}
+      { path: 'details', component: DetailsComponent }
 
     ])
   ],
