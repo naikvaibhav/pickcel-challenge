@@ -21,6 +21,8 @@ import { DetailsComponent } from './details/details.component';
 /*importing reverse pipe */
 import { ReverseStr } from './reverse-str.pipe';
 
+import { ArrToStr } from './arrtostr.pipe'
+
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { ReverseStr } from './reverse-str.pipe';
     AppComponent,
     ListComponent,
     DetailsComponent,
-    ReverseStr
+    ReverseStr,
+    ArrToStr
 
   ],
   imports: [

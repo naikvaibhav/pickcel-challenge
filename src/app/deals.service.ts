@@ -14,10 +14,8 @@ import 'rxjs/add/operator/do';
 })
 
 export class DealsService {
-  public a = [];
-  public value = [];
-
-  private baseUrl = " https://test.pickcel.com/api/v1/getAmazonDeals";
+  
+  private baseUrl = "https://test.pickcel.com/api/v1/getAmazonDeals";
 
   constructor(private _http: HttpClient) {
     console.log('Deals service called')
